@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+
+:root {
+  /* Color palette */
+  --primary-color: #3a3c46;
+  --secondary-color: #f3f5f8;
+  --complementary-color: #a28d7f;
+  --body-background-color: #1e1e1e;
+  /*Web site fonts*/
+  --heading-font: 'Roboto Serif', sans-serif;
+  --paragraph_font: 'Roboto', sans-serif;
+
+}
+
+#content {
+  width: 360px;
+  height: max-content;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+header, 
+footer {
+  background-color: var(--primary-color);
+  font-family: var(--heading-font);
+  color: #fff;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+}
+
+body {
+  background-color: var(--body-background-color);
+}
+
+
+h1 {
+  text-align: center;
+  text-decoration: none;
+  padding: 3px;
+}
+
+h2 {
+  text-align: center;
+  text-decoration: none;
+  color: var(--body-background-color);
+}
+
+h2 ul {
+  font-family: var(--paragraph_font);
+}
+
+
+footer {
+  font-size: 6px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 500px) {
+  html {
+    max-width: 700px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  footer {
+    flex-direction: column;
+    margin-top: 25px;
+  }
+}
