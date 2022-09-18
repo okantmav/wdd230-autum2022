@@ -1,62 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,500&display=swap");
 
 :root {
   /* Color palette */
-  --primary-color: #3a3c46;
-  --secondary-color: #f3f5f8;
-  --complementary-color: #a28d7f;
-  --body-background-color: #1e1e1e;
+  --accent-color: #593c32;
+  --primary-color: #a67360;
+  --secondary-dolor: #a3a698;
+  --complementary-color: #242625;
+  --body-background-color: #0c0d0c;
   /*Web site fonts*/
-  --heading-font: 'Roboto Serif', sans-serif;
-  --paragraph_font: 'Roboto', sans-serif;
-
+  --heading-font: "Roboto Serif";
+  --paragraph-font: "Roboto", sans-serif;
 }
 
 #content {
   width: 360px;
   height: max-content;
   margin: 0 auto;
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-dolor);
   overflow: hidden;
   border-radius: 12px;
+  padding-top: 12px;
 }
 
-header, 
+header,
 footer {
   background-color: var(--primary-color);
   font-family: var(--heading-font);
-  color: #fff;
+  text-decoration: none;
 }
 header {
-    display: flex;
-    justify-content: space-around;
-    font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
 }
 
 body {
   background-color: var(--body-background-color);
 }
 
+a {
+  color: var(--accent-color);
+  font-weight: bold;
+  text-decoration: ;
+}
 
-h1 {
+img {
+  width: 106px;
+  height: auto;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+h1,
+h2 {
+  color: var(--body-background-color);
   text-align: center;
   text-decoration: none;
   padding: 3px;
 }
 
-h2 {
-  text-align: center;
-  text-decoration: none;
-  color: var(--body-background-color);
+section {
+  font-family: var(--paragraph-font);
 }
 
-h2 ul {
-  font-family: var(--paragraph_font);
+section h2 {
+  color: var(--complementary-color);
 }
-
 
 footer {
-  font-size: 6px;
+  font-size: 7px;
+  font-weight: lighter;
 }
 
 @media screen and (min-width: 200px) and (max-width: 500px) {
@@ -68,6 +81,5 @@ footer {
   }
   footer {
     flex-direction: column;
-    margin-top: 25px;
   }
 }
