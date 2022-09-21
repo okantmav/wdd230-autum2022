@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Serif:opsz,wght@8..144,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Open+Sans:wght@500&display=swap");
 
 :root {
   /* Color palette */
@@ -8,8 +8,8 @@
   --complementary-color: #242625;
   --body-background-color: #0c0d0c;
   /*Web site fonts*/
-  --heading-font: "Roboto Serif";
-  --paragraph-font: "Roboto", sans-serif;
+  --heading-font: "Open Sans", sans-serif;
+  --paragraph-font:  "Cutive Mono", monospace;
 }
 
 #content {
@@ -28,10 +28,11 @@ footer {
   font-family: var(--heading-font);
   text-decoration: none;
 }
+
 header {
   display: flex;
   justify-content: space-around;
-  font-size: 18px;
+  font-size: 21px;
 }
 
 body {
@@ -40,8 +41,8 @@ body {
 
 a {
   color: var(--accent-color);
-  font-weight: bold;
-  text-decoration: ;
+  font-weight: 800;
+  text-decoration: none;
 }
 
 img {
@@ -61,6 +62,7 @@ h2 {
 
 section {
   font-family: var(--paragraph-font);
+  font-weight: 600;
 }
 
 section h2 {
@@ -68,7 +70,7 @@ section h2 {
 }
 
 footer {
-  font-size: 7px;
+  font-size: 5px;
   font-weight: lighter;
 }
 
