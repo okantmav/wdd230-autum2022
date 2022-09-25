@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans&family=Roboto&display=swap');
+
+:root {
+  /* Color palette */
+  --accent-color: #233056;
+  --primary-color: #221f22;
+  --secondary-color: #2d2a2e;
+  --complementary-color: #090c15;
+  --body-background-color: #0c0d0c;
+  --primary-font-color: #fff;
+  /* Web site fonts */
+  --h1-font-family: 'Lato', sans-serif;
+  --h2-font-family: 'Noto Sans', sans-serif;
+  --p--font-family: 'Roboto', sans-serif;
+  /* Font size */
+  --h1-font-size: 24px;
+  --h2-font-size: 18px;
+  --p-font-size: 12px;
+}
+
+  body {
+    background-color: var(--body-background-color);
+  }
+
+  #content {
+    width: auto;
+    overflow: hidden;
+    padding: 9px 0 9px 0;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+  }
+
+  header,
+  footer {
+    display: flex;
+    justify-content: space-around;
+    color: var(--primary-font-color);
+    font-family: var(--heading-font);
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--complementary-color);
+  }
+
+  header {
+    align-items: center;
+    font-size: var(--h1-font-size);
+    font-family: var(--h1-font-family);
+  }
+  img {
+    width: 320px;
+    height: max-content;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 9px var(--body-background-color);
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: repeat(3fr);
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  section {
+    width: 80%;
+    color: var(--primary-font-color);
+    background-color: var(--accent-color);
+    padding: 24px 24px 24px 24px;
+  }
+
+  section h2 {
+    font-size: var(--h1-font-size);
+    font-family: var(--h1-font-family);
+  }
+
+  section ul li {
+    font-size: var(--p-font-size);
+    font-family: var(--p--font-family);
+    list-style-type: square;
+  }
+  a {
+    font-weight: 400;
+    color: var(--primary-font-color);
+    font-size: var(--p-font-size);
+    font-family: var(--p--font-family);
+    border-bottom: 9px;
+    text-decoration: none;
+  }
+
+  footer {
+    font-size: var(--h2-font-size);
+    font-family: var(--h2-font-family);
+  }
