@@ -1,32 +1,77 @@
-@media only screen and (min-with: 32.5em) {
-  h1 {
-    font-size:  2.5rem;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Noto+Sans+Mono:wght@500&family=Open+Sans:wght@500&display=swap');
+
+:root {
+  /* Color palette */
+  --accent-color: #593c32;
+  --primary-color: #a67360;
+  --secondary-color: #a3a698;
+  --complementary-color: #242625;
+  --body-background-color: #0c0d0c;
+  /* Web site fonts */
+  --h1-font-family: 'Fira Code', monospace;
+  --h2-font-family: 'Noto Sans Mono', monospace;
+  --p--font-family: 'Open Sans', sans-serif;
+  /* Font size */
+  --h1-font-size: 1.5rem;
+  --h2-font-size: .9rem;
+  --p-font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 32.5em) {
+  body {
+    background-color: var(--body-background-color);
   }
 
-  h2 {
-    font-size: 1.5rem;
+  #content {
+    width: auto;
+    overflow: hidden;
+    padding: 9px 0 9px 0;
+    margin: 0 auto;
+    background-color: var(--primary-color);
   }
 
   header,
   footer {
-    display: block;
-    height: auto;
-    padding: 3px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+    font-family: var(--heading-font);
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--complementary-color);
+  }
+
+  header {
+    align-items: center;
+    font-size: var(--h1-font-size);
+    font-family: var(--h1-font-family);
+  }
+  img {
+    width: 212px;
+    height: max-content;
+    box-shadow: 5px 5px 9px var(--body-background-color);
+  }
+
+  section h2 {
+    font-size: var(--h1-font-size);
+    font-family: var(--h1-font-family);
+  }
+
+  section ul li {
+    font-size: var(--p-font-size);
+    font-family: var(--p--font-family);
+    list-style-type: square;
+  }
+  a {
+    font-size: var(--p-font-size);
+    font-weight: 600;
+    font-family: var(--p--font-family);
+    color: var(--body-background-color);
+    text-decoration: none;
   }
 
   footer {
-    flex-direction: column;
-  }
-
-  header img {
-    float: center;
-    border-radius: 9px;
-    width: 60%;
-  }
-
-  #content {
-    display: none;
+    font-size: var(--h2-font-size);
+    font-family: var(--h2-font-family);
   }
 }
-
-

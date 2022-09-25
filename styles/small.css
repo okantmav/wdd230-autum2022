@@ -1,95 +1,88 @@
-@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Open+Sans:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Noto+Sans+Mono:wght@500&family=Open+Sans:wght@500&display=swap');
 
 :root {
   /* Color palette */
   --accent-color: #593c32;
   --primary-color: #a67360;
-  --secondary-dolor: #a3a698;
+  --secondary-color: #a3a698;
   --complementary-color: #242625;
   --body-background-color: #0c0d0c;
-  /*Web site fonts*/
-  --heading-font: "Open Sans", sans-serif;
-  --paragraph-font:  "Cutive Mono", monospace;
-}
-
-#content {
-  width: 360px;
-  height: max-content;
-  margin: 0 auto;
-  background-color: var(--secondary-dolor);
-  overflow: hidden;
-  border-radius: 12px;
-  padding: 9px 0 9px 0;
-
-}
-
-header,
-footer {
-  background-color: var(--primary-color);
-  font-family: var(--heading-font);
-  text-decoration: none;
-}
-
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 3px;
-}
-
-footer {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 12px;
+  /* Web site fonts */
+  --h1-font-family: 'Fira Code', monospace;
+  --h2-font-family: 'Noto Sans Mono', monospace;
+  --p--font-family: 'Open Sans', sans-serif;
+  /* Font size */
+  --h1-font-size: .75rem;
+  --h2-font-size: .45rem;
+  --p-font-size: .6rem;
 }
 
 body {
   background-color: var(--body-background-color);
 }
 
-a {
-  color: var(--body-background-color);
-  font-weight: 800;
+#content {
+  width: auto;
+  height: max-content;
+  overflow: hidden;
+  padding: 9px 0 9px 0;
+  border-radius: 12px;
+  background-color: var(--secondary-color);
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--heading-font);
+  text-align: center;
   text-decoration: none;
+  padding: 3px;
+  background-color: var(--primary-color);
+}
+
+header {
+  align-items: center;
 }
 
 img {
-  width: 106px;
-  height: 144px;
-  padding-top: 3px;
+  width: 240px;
+  height: auto;
+  padding-top: 6px;
 }
 
-h1 {
-  color: var(--body-background-color);
-  font-size:  1.9rem;
-  margin: 0.15rem;
-  text-align: center;
-  text-decoration: none;
-}
-
-
-h2 {
-  color: var(--body-background-color);
-  font-size:  1.0rem;
-  margin: 0.15rem;
-  text-align: center;
-  text-decoration: none;
+nav,
+footer {
+  flex-direction: column;
 }
 
 section {
-  font-family: var(--paragraph-font);
-  font-weight: 600;
+  padding: 6px 36px 6px 36px;
 }
 
 section h2 {
-  color: var(--complementary-color);
+  font-size: var(--h1-font-size);
+  font-family: var(--p-font-family);
 }
 
-footer h1 {
-  font-size: .75rem;
+section ul,
+section ul li {
+  font-size: var(--p-font-size);
+  font-family: var(--p--font-family);
 }
 
-footer h2 {
-  font-size: .55rem;
+a {
+  font-size: var(--p-font-size);
+  font-weight: 600;
+  font-family: var(--h2--font-family);
+  color: var(--body-background-color);
+  text-decoration: none
+}
+
+footer {
+  align-items: flex-end;
+  text-align: right;
+  padding-right: 12px;
+  font-size: var(--h2-font-size);
+  font-family: var(--h2-font-family);
 }
