@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Aguascalientes Chamber of Commerce project by Marco A. Macias in WDD 230: Web Frontend Development I at BYU - Idaho. Chamber Home Page Build">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <title>OKANTMAV | WDD 230: Chamber Home Page Build</title>
+  </head>
+
+  <body>
+    <div class="content">
+      <header>
+        <span>
+          <a href="#"><img src="images/ags_logo_large_width.png" alt=""></a>
+        </span>
+        <span>
+          <img class="facebook-logo" src="images/f_logo_RGB-Blue_58.png" alt="Facebook logo">
+          <img class="linkedin-logo" src="images/LI-In-Bug.png" alt="LinkedIn logo">
+        </span>
+        <nav>
+          <button id="hamburgerBtn"><span>&#9776;</span><span>&#10094;</span></button>
+          <section id="primaryNav">
+            <a class="active" href="#">Discovery</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Contact</a>
+          </section>
+        </nav>
+        <p><span id="currentUSDate"></span>
+          <aside id="currentUKDate"></aside>
+        </p>
+      </header>
+
+      <main>
+        <div>
+          <section>Event</section>
+          <section>Weather</section>
+          <section>Join</section>
+          <section>Hero with site name and call to action</section>
+          <section>News Realese</section>
+          <section>
+            <p>Spotlight One</p>
+            <p>Spotlight Two</p>
+            <p>Spotlight Three</p>
+          </section>
+        </div>
+      </main>
+
+      <footer>
+        <picture><a href="#"><img src="images/ags_logo_large_width.png" alt=""></a></picture>
+        <section>
+          <h2>Av. Patria #1543</h2>
+          <h2>Aguascalientes, AGS-MX</h2>
+        </section>
+        <section>
+          <p>&#9993; info@agschamber.org</p>
+          <p>&phone; +52 449-123-4567</p>
+          <p>&#9873; Location Map</p>
+        </section>
+        <section>
+          <p>&copy; 2022 Aguascalientes Chamber | Marco A. Macias | WDD 230 Project</p>
+          <p>Last Updated: <span id="lastUpdate"></span></p>
+        </section>
+      </footer>
+
+      <script src="scripts/hamMenu.js"></script>
+      <script src="scripts/currentDateCode.js"></script>
+      <script src="scripts/lastUpdateCode.js"></script>
+    </div>
+
+  </body>
+
+</html>
