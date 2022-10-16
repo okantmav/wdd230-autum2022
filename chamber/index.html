@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
       content="Aguascalientes Chamber of Commerce project by Marco A. Macias in WDD 230: Web Frontend Development I at BYU - Idaho. Chamber Home Page Build">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -16,6 +17,9 @@
 
   <body>
     <div class="content">
+      <div id="monday-tuesday-banner">
+        <p><span id="event"></span></p>
+      </div>
       <header>
         <span>
           <a href="#"><img src="images/ags_logo_large_width.png" alt=""></a>
@@ -40,15 +44,74 @@
 
       <main>
         <div>
-          <section>Event</section>
-          <section>Weather</section>
-          <section>Join</section>
-          <section>Hero with site name and call to action</section>
-          <section>News Realese</section>
           <section>
-            <p>Spotlight One</p>
-            <p>Spotlight Two</p>
-            <p>Spotlight Three</p>
+            <h1>Ribbon Cutting</h1>
+            <h2><span class="material-icons md-48 md-dark">
+                diamond
+              </span>The Diamond Shack</h2>
+            <p>Join us for the grand opening of The Diamond Shack, Thusday at 1:00 p.m. <a href="#">more info...</a></p>
+          </section>
+          <section>
+            <h1>Weather</h1>
+            <h2><span class="material-icons md-48 md-dark">
+                partly_cloudy_night
+              </span></h2>
+            <h2>33°C</h2>
+            <h2>Partly Cloudy</h2>
+            <ul>
+              <li>Wind Speed<p>2.5 km/h</p>
+              </li>
+              <li>Wind Chill<p>N/A</p>
+              </li>
+            </ul>
+            <P></P>
+          </section>
+          <section>
+            <button>Join Us!</button>
+            <p>Discover how to join the chamber of commerce and how it will beneft your organization!</p>
+          </section>
+          <section>
+            <h1>Welcome to Aguascalientes</h1>
+            <img class="image-heroe" src="images/960px_Teatro_Morelos_de_Aguascalientes_01.jpg" alt="">
+            <p><a href="https://creativecommons.org/licenses/by-sa/4.0"
+                title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a
+                href="https://commons.wikimedia.org/w/index.php?curid=36352256">Enlace</a></p>
+            <button>Join the Chamber</button>
+          </section>
+          <section>
+            <h1>News Realese</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit consequatur mollitia perspiciatis sint
+              incidunt tempore neque rerum expedita molestiae provident? Voluptatum doloremque iste rem nam esse. Esse
+              perferendis nulla atque!</p>
+          </section>
+          <section>
+            <section>
+              <h1>Thankful Transport</h1>
+              <h2><span class="material-icons md-48 md-dark">
+                  local_shipping
+                </span></h2>
+                <h2>"We get it there for you!"</h2>
+                <p>hello@thankfultransport.com</p>
+                <p>+999-9999-9999 | Website</p>
+            </section>
+            <section>
+              <h1>Code Primera</h1>
+              <h2><span class="material-icons md-48 md-dark">
+                  design_services
+                </span></h2>
+                <h2>An after school coding instructional program</h2>
+                <p>contact@codeprimera.com</p>
+                <p>+999-9999-9999 | Website</p>
+            </section>
+            <section>
+              <h1>Built A Treefort</h1>
+              <h2><span class="material-icons md-48 md-dark">
+                  signpost
+                </span></h2>
+                <h2>Over 1,000 Plans!</h2>
+                <p>builda@treefort.com</p>
+                <p>+999-9999-9999 | Website</p>
+            </section>
           </section>
         </div>
       </main>
@@ -73,6 +136,7 @@
       <script src="scripts/hamMenu.js"></script>
       <script src="scripts/currentDateCode.js"></script>
       <script src="scripts/lastUpdateCode.js"></script>
+      <script src="scripts/meetingDays.js"></script>
     </div>
 
   </body>

@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Poppins&display=swap');
+
 
 :root {
   /* Color palette */
@@ -14,6 +16,12 @@
   --h2-font-size: .3rem;
   --p-font-size: .3rem;
 }
+
+/* Rules for sizing the icon. */
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: var(--secondary-color) }
 
 #content {
   width: auto;
@@ -124,14 +132,17 @@ nav a:hover {
   font-weight: bold;
 }
 
+.image-heroe {
+  width: 480px;
+
+}
+
 header img {
-  width: 360px;
-  height: max-content;
+  width: 360px;;
 }
 
 footer img {
   width: 50%;
-  height: max-content;
 }
 
 section h2 {
