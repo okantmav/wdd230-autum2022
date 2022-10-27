@@ -1,18 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>OKANTMAV | WDD 230: Progressive Loading of Images</title>
-</head>
-<body>
 
-<h1>Michis Shop to Lazy Loading</h1>
-  <article><img src="https://unsplash.com/es/fotos/75715CVEJhI" alt=""></article>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>OKANTMAV | WDD 230: Progressive Loading of Images</title>
+  </head>
 
+  <body>
+    <div>
+      <header>
+        <h1>Michis Shop to Lazy Loading</h1>
+        <main>
+      </header>
+      <article>
+        <picture><img data-src="images/amber-kipp-75715CVEJhI-unsplash.jpg" src="images/No-Image-Placeholder.jpg"
+            alt="Orange Kat" loading="lazy"></picture>
+        <p>Foto de <a
+            href="https://unsplash.com/@sadmax?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Amber
+            Kipp</a> en <a
+            href="https://unsplash.com/es/s/fotos/kats?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+      </article>
+      <article>
+        <picture><img data-src="images/karina-vorozheeva-rW-I87aPY5Y-unsplash.jpg" src="images/No-Image-Placeholder.jpg"
+            alt="Butterfly kat" loading="lazy"></picture>
+        <p>Foto de <a
+            href="https://unsplash.com/@_k_arinn?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Karina
+            Vorozheeva</a> en <a
+            href="https://unsplash.com/es/s/fotos/kats?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+      </article>
+      <article>
+        <picture><img data-src="images/alexander-london-mJaD10XeD7w-unsplash.jpg" src="images/No-Image-Placeholder.jpg"
+            alt="Brown kat" loading="lazy"></picture>
+        <p>Foto de <a
+            href="https://unsplash.com/@alxndr_london?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexander
+            London</a> en <a
+            href="https://unsplash.com/es/s/fotos/kats?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+      </article>
+      <article>
+        <picture><img data-src="images/bogdan-farca-CEx86maLUSc-unsplash.jpg" src="images/No-Image-Placeholder.jpg"
+            alt="Curious kat" loading="lazy"></img></picture>
+        <p>Foto de <a
+            href="https://unsplash.com/@bogdanf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Bogdan
+            Farca</a> en <a
+            href="https://unsplash.com/es/s/fotos/kats?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+      </article>
+      <article>
+        <picture><img data-src="images/alvan-nee-ZCHj_2lJP00-unsplash.jpg" src="images/No-Image-Placeholder.jpg"
+            alt="Baby kat" loading="lazy"></img></picture>
+        <p>Foto de <a
+            href="https://unsplash.com/ja/@alvannee?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alvan
+            Nee</a> en <a
+            href="https://unsplash.com/es/s/fotos/kats?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+      </article>
+      </main>
+    </div>
+  </body>
+  <script src="scripts/lazyload.js"></script>
 
-</body>
-<script src=""></script>
 </html>

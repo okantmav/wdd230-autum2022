@@ -1,8 +1,45 @@
-article img[data-src] {
+body {
+  max-width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: papayawhip;
+}
+
+div {
+  text-align: center;
+  background-color: goldenrod;
+  padding: 12px;
+}
+
+h1, p {
+  padding: 5px;
+  color: blue;
+  background-color: papayawhip;
+}
+
+img {
+  width: 100%;
+}
+
+
+
+article picture img[data-src] {
   filter: blur(0.2em);
 }
 
-article img {
+article picture img {
   filter: blur(0em);
-  transition: filter 0.5s;
+  transition: filter 0.9s;
+}
+
+
+@media only screen and (min-width: 32.5em) {
+
+  body {
+    max-width: auto;
+  }
+
+  img {
+    width: auto;
+  }
 }
