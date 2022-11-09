@@ -1,24 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500&family=Noto+Sans+Mono:wght@500&family=Open+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&family=Open+Sans:wght@500&display=swap');
 
 :root {
   /* Color palette */
-  --accent-color: #593c32;
-  --primary-color: #a67360;
-  --secondary-color: #a3a698;
-  --complementary-color: #242625;
-  --body-background-color: #0c0d0c;
+  --accent-color: #167B9C;
+  --primary-color: #91795F;
+  --secondary-color: #B9B9CC;
+  --complementary-color: #2D2D2D;
+  --background-color: #F1F1F3;
+
   /* Web site fonts */
-  --h1-font-family: 'Fira Code', monospace;
-  --h2-font-family: 'Noto Sans Mono', monospace;
-  --p--font-family: 'Open Sans', sans-serif;
+  --h-font-family: 'Noto Sans', sans-serif;
+  --p-font-family: 'Open Sans', sans-serif;
+
   /* Font size */
-  --h1-font-size: .75rem;
-  --h2-font-size: .45rem;
-  --p-font-size: .6rem;
+  --h-font-size: .75rem;
+  --p-font-size: .9rem;
 }
 
 body {
-  background-color: var(--body-background-color);
+  background-color: var(--background-color);
+  margin: 12px;
 }
 
 #content {
@@ -27,26 +28,30 @@ body {
   overflow: hidden;
   padding: 9px 0 9px 0;
   border-radius: 12px;
-  background-color: var(--secondary-color);
+  border: 3px solid var(--primary-color);
+  background-color: var(--background-color);
 }
 
 header,
 footer {
   display: flex;
   flex-direction: column;
-  font-family: var(--heading-font);
-  text-align: center;
-  text-decoration: none;
+  font-family: var(--h-font-family);
   padding: 3px;
-  background-color: var(--primary-color);
 }
 
 header {
-  align-items: center;
+  text-align: center;
+  color: var(--accent-color);
+  border-bottom: 3px solid var(--primary-color);
+}
+
+main {
+  padding: 36px;
 }
 
 img {
-  width: 240px;
+  width: 210px;
   padding-top: 6px;
   border-radius: 12px;
 }
@@ -56,33 +61,29 @@ footer {
   flex-direction: column;
 }
 
-section {
-  padding: 6px 36px 6px 36px;
-}
 
-section h2 {
-  font-size: var(--h1-font-size);
+div ul,
+div ul li {
   font-family: var(--p-font-family);
+  list-style-type: square;
 }
 
-section ul,
-section ul li {
-  font-size: 1rem;
-  font-family: var(--p--font-family);
+main>div>h2 {
+  font-family: var(--p-font-family);
+  color: var(--primary-color);
+  font-weight: bolder;
 }
 
 a {
-  font-size: .9rem;
-  font-weight: 600;
-  font-family: var(--h2--font-family);
-  color: var(--body-background-color);
-  text-decoration: none
+  font-family: var(--p-font-family);
+  color: var(--complementary-color);
 }
 
 footer {
+  border-top: 3px solid var(--primary-color);
   align-items: flex-end;
   text-align: right;
   padding-right: 12px;
-  font-size: .5rem;
-  font-family: var(--h2-font-family);
+  font-size: var(--p-font-size);
+  font-family: var(--h-font-family);
 }

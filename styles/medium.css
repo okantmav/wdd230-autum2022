@@ -2,52 +2,52 @@
 
 :root {
   /* Color palette */
-  --accent-color: #593c32;
-  --primary-color: #a67360;
-  --secondary-color: #a3a698;
-  --complementary-color: #242625;
-  --body-background-color: #0c0d0c;
+  --accent-color: #167B9C;
+  --primary-color: #91795F;
+  --secondary-color: #B9B9CC;
+  --complementary-color: #2D2D2D;
+  --background-color: #F1F1F3;
+
   /* Web site fonts */
-  --h1-font-family: 'Fira Code', monospace;
-  --h2-font-family: 'Noto Sans Mono', monospace;
-  --p--font-family: 'Open Sans', sans-serif;
+  --h-font-family: 'Noto Sans Mono', monospace;
+  --p-font-family: 'Open Sans', sans-serif;
+
   /* Font size */
-  --h1-font-size: 1.5rem;
-  --h2-font-size: .9rem;
-  --p-font-size: 1.2rem;
+  --h-font-size: 4.75rem;
+  --p-font-size: .6rem;
 }
+
 
 @media only screen and (min-width: 32.5em) {
   #content {
-    width: auto;
+    width: 720px;
     overflow: hidden;
     padding: 9px 0 9px 0;
     margin: 0 auto;
   }
 
   header {
-    align-items: center;
-    font-size: 2.8rem;
+    font-size: var(--h-font-family);
+    text-align: left;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 24px;
+  }
+
+  footer {
+    margin: 24px;
   }
 
   img {
     width: 240px;
   }
 
-  section h2 {
-    font-size: 2.2rem;
-  }
-
   section ul li {
-    font-size: var(--p-font-size);
-    font-family: var(--p--font-family);
+    font-family: var(--p-font-family);
     list-style-type: square;
   }
-  a {
-    font-size: 1.2rem;
-  }
-
-  footer {
-    font-size: .7rem;
   }
 }
